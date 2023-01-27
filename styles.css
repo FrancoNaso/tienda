@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.todo{
+.todo {
     width: 90%;
     margin: auto;
     display: flex;
@@ -13,7 +13,7 @@
     gap: 2rem;
 }
 
-main{
+main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -21,15 +21,15 @@ main{
     padding-bottom: 5em;
 }
 
-.imagen{
+.imagen {
     width: 200px;
-    object-fit:contain;
+    object-fit: contain;
     max-height: 100px;
     margin: auto;
     transition: all ease .3s;
 }
 
-.carta{
+.carta {
     background-color: darkgrey;
     padding: 1rem .5rem;
     min-height: 300px;
@@ -40,10 +40,10 @@ main{
 
 }
 
-.carta:hover .imagen{
-  
-    width:100%;
-    object-fit:contain;
+.carta:hover .imagen {
+
+    width: 100%;
+    object-fit: contain;
     max-height: 200px;
     margin: auto;
 }
@@ -53,15 +53,25 @@ main{
     display: none;
 }
 
-.carta:hover .precio{
+.carta:hover .precio {
     opacity: 0;
     display: none;
 }
 
-.precio{
+.precio {
     transition: all ease .5s;
 }
 
 .titulo {
     transition: all ease .5s;
+}
+
+.botones ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+}
+.botones{
+    width: 100%;
 }
