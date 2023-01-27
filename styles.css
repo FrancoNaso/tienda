@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.todo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 5em;
+}
+
+.imagen{
+    width: 200px;
+    object-fit:contain;
+    max-height: 100px;
+    margin: auto;
+    transition: all ease .3s;
+}
+
+.carta{
+    background-color: darkgrey;
+    padding: 1rem .5rem;
+    min-height: 300px;
+    border-radius: 15px;
+    display: grid;
+    transition: all ease .5s;
+    cursor: pointer;
+
+}
+
+.carta:hover .imagen{
+  
+    width:100%;
+    object-fit:contain;
+    max-height: 200px;
+    margin: auto;
+}
+
+.carta:hover .titulo {
+    opacity: 0;
+    display: none;
+}
+
+.carta:hover .precio{
+    opacity: 0;
+    display: none;
+}
+
+.precio{
+    transition: all ease .5s;
+}
+
+.titulo {
+    transition: all ease .5s;
+}
