@@ -37,6 +37,8 @@ main {
     display: grid;
     transition: all ease .5s;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -52,8 +54,15 @@ main {
     opacity: 0;
     display: none;
 }
-
+.carta:hover .cantidad {
+    opacity: 0;
+    display: none;
+}
 .carta:hover .precio {
+    opacity: 0;
+    display: none;
+}
+.carta:hover .descripcion {
     opacity: 0;
     display: none;
 }
@@ -65,7 +74,6 @@ main {
 .titulo {
     transition: all ease .5s;
 }
-
 .botones ul{
     display: flex;
     list-style: none;
@@ -74,4 +82,33 @@ main {
 }
 .botones{
     width: 100%;
+}
+
+
+.agotado{
+    position: absolute;
+    width: 150%;
+    height: 7rem;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 0, 0, 0.779);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: aliceblue;
+    transform: rotate(10deg);
+    text-align: center;
+    bottom: 0px;
+    top: 35%;
+    right: 0px;
+    left: -30%;
+}
+
+.stock{
+    display: none;
+}
+
+@media screen and (min-width:800px) {
+    main{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
